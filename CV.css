@@ -1,0 +1,72 @@
+body {
+  background: #EEDDEE;
+  margin: 0px;
+  max-width: 827px;
+}
+
+#main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: darkblue;
+  padding: 15px;
+}
+
+#cv-avatar {
+  width: 100px;
+  border-radius: 25px;
+}
+
+#titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#infos {
+  text-align: right;
+  padding: 10px;
+}
+
+#main-content {
+  padding: 20px;
+}
+
+#last-container {
+  display: flex;
+}
+
+
+.formation {
+  display: flex;
+}
+
+/*experiences*/
+
+.experience-infos > div {
+  display: inline-block;
+}
+
+.experience-flex {
+  display: flex;
+}
+
+/*last div*/
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.yes {
+  background: green;
+}
+
+.no {
+  background: yellow;
+}

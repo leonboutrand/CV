@@ -1,20 +1,33 @@
 body {
-  background: #EEDDEE;
+  background: #DDDDDDDD;
   margin: 0px;
-  max-width: 827px;
+  width: 827px;
+  height: 1170px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 13px;
 }
+
+/*top banner*/
 
 #main-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: darkblue;
+  background: #00008b8f;
   padding: 15px;
+  margin-top: 8px;
+}
+
+#name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 #cv-avatar {
-  width: 100px;
-  border-radius: 25px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
 #titles {
@@ -23,38 +36,132 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  font-size: 15px;
+}
+
+#titles > h1 {
+  font-size: 30px;
 }
 
 #infos {
   text-align: right;
-  padding: 10px;
+  padding: 8px;
+}
+
+#mail {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+/*general*/
+
+h2 {
+  background: linear-gradient(to right, red, transparent);
+  padding: 5px 20px;
+  margin: 10px 0;
+  font-size: 22px;
 }
 
 #main-content {
-  padding: 20px;
 }
 
-#last-container {
-  display: flex;
+.padding-20 {
+  padding: 5px 40px;
 }
 
-
-.formation {
-  display: flex;
+hr {
+  margin: 12px 100px;
+  border: 1px solid #CCCCCCCC;
+  border-bottom: none;
 }
 
 /*experiences*/
 
-.experience-infos > div {
-  display: inline-block;
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
 }
 
-.experience-flex {
+.experience-infos {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  color: #222;
+}
+
+.experience-infos > div {
+  margin-top: 5px;
+}
+
+.experience-logo {
+  height: 70px;
+  width: 70px;
+}
+
+.experience-tags {
+  text-align: right;
+  color: grey;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+.job {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+/*formation*/
+
+#formations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formation > h3, h4 {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #CCCCCCCC;
+}
+
+.formation > h5 {
+  margin: 0px;
+}
+
+.formation-content > h4 {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.formation-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formation:last-child {
+  border-bottom: none;
 }
 
 /*last div*/
+
+#last-container {
+  display: flex;
+}
 
 .circle {
   height: 15px;
@@ -69,4 +176,22 @@ body {
 
 .no {
   background: yellow;
+}
+
+.language {
+  display: grid;
+  grid-template-columns: 1.62fr 1fr;
+}
+
+.level {
+  padding-left: 23px;
+  height: 25px;
+}
+
+#hobbies {
+  border-left: 1px solid #CCCCCCCC;
+}
+
+.hobbie {
+  height: 25px;
 }

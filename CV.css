@@ -195,6 +195,10 @@ hr {
   color: #666;
 }
 
+.formation-description > a {
+  color: #444;
+}
+
 /*last div*/
 
 #last-container {
